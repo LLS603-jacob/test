@@ -38,4 +38,5 @@ delete_one删除一条数据
 collection.delete_one({“name”:“test10010”})
 删除全部数据
 delete_may删除所有满足条件的数据
+
 collection.delete_many({“name”:“test10010”})
