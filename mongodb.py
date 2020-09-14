@@ -8,6 +8,8 @@ from pymongo import MongoClient
 client = MongoClient(host,port)
 collection = client[db名][集合名]
 #添加一条数据
+
+#修改一下
 ret = collection.insert_one({“name”:“test10010”,“age”:33})
 print(ret)
 #添加多条数据
@@ -24,8 +26,11 @@ find返回所有满足条件的结果，如果条件为空，则返回数据库�
 t = collection.find({“name”:“test10005”})
 #结果是一个Cursor游标对象，是一个可迭代对象，可以类似读文件的指针，
 for i in t:
+ #再改一下
 print(i)
 for i in t: #此时t中没有内容
+  
+ #又改一下
 print(i)
 更新一条数据 注意使用$set命令
 update_one更新一条数据
